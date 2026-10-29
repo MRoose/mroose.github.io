@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-29T21:58:55.405Z",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+  "viewport": [
+    1280,
+    720
+  ],
+  "checks": [
+    {
+      "name": "Initial HUD / 700 credits / 30 lives / 6 modules / 10 waves",
+      "passed": true
+    },
+    {
+      "name": "Procedural Web Audio starts after a user gesture",
+      "passed": true
+    },
+    {
+      "name": "Mute",
+      "passed": true
+    },
+    {
+      "name": "Unmute",
+      "passed": true
+    },
+    {
+      "name": "Road cannot be built on",
+      "passed": true
+    },
+    {
+      "name": "Map placement deducts credits",
+      "passed": true
+    },
+    {
+      "name": "Selecting a placed tower opens its controls",
+      "passed": true
+    },
+    {
+      "name": "Three upgrades reach level IV",
+      "passed": true
+    },
+    {
+      "name": "Sale refunds 70% of all investment",
+      "passed": true
+    },
+    {
+      "name": "Cannot build without enough credits",
+      "passed": true
+    },
+    {
+      "name": "Escape cancels construction",
+      "passed": true
+    },
+    {
+      "name": "Keyboard tower selection",
+      "passed": true
+    },
+    {
+      "name": "Starting a wave and disabling duplicate start",
+      "passed": true
+    },
+    {
+      "name": "Space pauses simulation",
+      "passed": true
+    },
+    {
+      "name": "Space resumes simulation",
+      "passed": true
+    },
+    {
+      "name": "Speed ×1",
+      "passed": true
+    },
+    {
+      "name": "Speed ×2",
+      "passed": true
+    },
+    {
+      "name": "Speed ×4",
+      "passed": true
+    },
+    {
+      "name": "Help pauses and opens a dialog",
+      "passed": true
+    },
+    {
+      "name": "Closing help resumes previous state",
+      "passed": true
+    },
+    {
+      "name": "Cancel restart preserves game",
+      "passed": true
+    },
+    {
+      "name": "Confirmed restart resets game",
+      "passed": true
+    },
+    {
+      "name": "Stress ×1 has 3000 active enemies and 48 towers",
+      "passed": true
+    },
+    {
+      "name": "Stress ×1 minimum one-second FPS ≥ 30",
+      "passed": true
+    },
+    {
+      "name": "Stress ×1 actual projectiles and status effects",
+      "passed": true
+    },
+    {
+      "name": "Stress ×2 has 3000 active enemies and 48 towers",
+      "passed": true
+    },
+    {
+      "name": "Stress ×2 minimum one-second FPS ≥ 30",
+      "passed": true
+    },
+    {
+      "name": "Stress ×2 actual projectiles and status effects",
+      "passed": true
+    },
+    {
+      "name": "Stress ×4 has 3000 active enemies and 48 towers",
+      "passed": true
+    },
+    {
+      "name": "Stress ×4 minimum one-second FPS ≥ 30",
+      "passed": true
+    },
+    {
+      "name": "Stress ×4 actual projectiles and status effects",
+      "passed": true
+    },
+    {
+      "name": "Defeat screen is rendered",
+      "passed": true
+    },
+    {
+      "name": "Restart from defeat",
+      "passed": true
+    },
+    {
+      "name": "Boss HUD rendered",
+      "passed": true
+    },
+    {
+      "name": "Victory screen is rendered only after final boss dies",
+      "passed": true
+    },
+    {
+      "name": "Restart from victory",
+      "passed": true
+    },
+    {
+      "name": "No JavaScript errors or unhandled rejections",
+      "passed": true
+    }
+  ],
+  "benchmarks": [
+    {
+      "speed": 1,
+      "enemies": 3000,
+      "towers": 48,
+      "samples": 1152,
+      "seconds": 8,
+      "averageFPS": 144,
+      "minimumOneSecondFPS": 144,
+      "p95FrameMs": 7,
+      "p99FrameMs": 7.1,
+      "averageDrawMs": 3
+    },
+    {
+      "speed": 2,
+      "enemies": 3000,
+      "towers": 48,
+      "samples": 1152,
+      "seconds": 8,
+      "averageFPS": 144,
+      "minimumOneSecondFPS": 144,
+      "p95FrameMs": 7,
+      "p99FrameMs": 7.1,
+      "averageDrawMs": 3
+    },
+    {
+      "speed": 4,
+      "enemies": 3000,
+      "towers": 48,
+      "samples": 1152,
+      "seconds": 8,
+      "averageFPS": 144,
+      "minimumOneSecondFPS": 144,
+      "p95FrameMs": 7,
+      "p99FrameMs": 7.1,
+      "averageDrawMs": 2.9
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

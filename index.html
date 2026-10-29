@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101817">
+  <title>Последний рубеж — Tower Defense</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="rail" aria-label="Навигация">
+      <a class="brand" href="./index.html" aria-label="Последний рубеж">R<span>↗</span></a>
+      <span class="rail-line"></span><span class="rail-mark active" title="Операция">◈</span>
+      <button id="help" class="rail-button" aria-label="Как играть" title="Как играть · H">?</button>
+      <button id="sound" class="rail-button sound" aria-label="Выключить звук" title="Звук · M">♫</button>
+      <span class="rail-bottom">TD / 01</span>
+    </aside>
+    <main>
+      <header class="header">
+        <div><div class="eyebrow"><span class="live-dot"></span> ПРОТОКОЛ ОБОРОНЫ <span class="muted">/</span> СЕКТОР 07</div><h1>ПОСЛЕДНИЙ РУБЕЖ<span class="title-dot">.</span></h1></div>
+        <div class="header-right"><span class="offline-dot"></span> ЛОКАЛЬНАЯ ОПЕРАЦИЯ<button id="restart" class="icon-button" aria-label="Начать заново" title="Начать заново">↻</button></div>
+      </header>
+      <section class="dashboard" aria-label="Показатели операции">
+        <div class="metric"><span class="metric-icon mint">⬡</span><div><span class="label">КРЕДИТЫ</span><strong id="money">700</strong></div><span class="metric-note">НА СТРОИТЕЛЬСТВО</span></div>
+        <div class="metric"><span class="metric-icon coral">♡</span><div><span class="label">ЦЕЛОСТНОСТЬ БАЗЫ</span><strong><span id="lives">30</span><small> / 30</small></strong></div><div class="life-meter"><i id="life-bar"></i></div></div>
+        <div class="metric"><span class="metric-icon">≋</span><div><span class="label">ВОЛНА</span><strong><span id="wave">00</span><small> / 10</small></strong></div><span class="metric-note" id="wave-label">ПОДГОТОВКА</span></div>
+        <div class="metric"><span class="metric-icon amber">⌖</span><div><span class="label">ВРАГОВ В СЕКТОРЕ</span><strong id="enemies">0</strong></div><span class="fps"><span id="fps">60</span> FPS <i></i></span></div>
+      </section>
+      <div class="workspace">
+        <section class="battlefield">
+          <div class="map-toolbar"><div><span class="live-dot"></span><strong>СЕКТОР 07</strong><span class="map-subtitle">СУХОЕ РУСЛО</span></div><div class="time-controls" aria-label="Скорость игры"><button id="pause" aria-label="Пауза" title="Пауза · Пробел">Ⅱ</button><span></span><button class="speed active" data-speed="1">×1</button><button class="speed" data-speed="2">×2</button><button class="speed" data-speed="4">×4</button></div></div>
+          <div class="canvas-wrap" id="canvas-wrap"><canvas id="game" width="1120" height="720" aria-label="Карта обороны. Выберите башню и нажмите на свободный участок." tabindex="0"></canvas><div class="map-coordinate">47° 12′ N &nbsp; 08° 34′ E <span>ТОПОГРАФИЯ / 01</span></div><div id="pause-label" class="pause-label" hidden>Ⅱ ОПЕРАЦИЯ ПРИОСТАНОВЛЕНА</div><div id="boss-hud" hidden><div><span>⚠ ТИТАН / ФИНАЛЬНЫЙ БОСС</span><span id="boss-percent">100%</span></div><i><b id="boss-bar"></b></i></div><div id="toast" role="status"></div></div>
+          <div class="map-footer"><div><span class="legend-dot enemy"></span> ПРОТИВНИК <span class="legend-dot base"></span> БАЗА <span class="legend-dot area"></span> РАДИУС ОГНЯ</div><span id="map-hint">ВЫБЕРИТЕ БАШНЮ → РАЗМЕСТИТЕ НА КАРТЕ</span></div>
+        </section>
+        <aside class="arsenal">
+          <div class="panel-heading"><h2>Арсенал</h2><span>06 МОДУЛЕЙ</span></div>
+          <p class="panel-description">Постройте свою линию обороны.</p>
+          <div id="tower-cards" class="tower-cards"></div>
+          <section id="selection" class="selection" aria-live="polite"></section>
+          <section class="wave-preview"><div class="eyebrow">СЛЕДУЮЩАЯ УГРОЗА <span id="next-number">01 / 10</span></div><div class="threat"><span class="threat-icon">⌁</span><div><h3 id="next-title">Первый контакт</h3><p id="next-description">24 разведчика · базовая броня</p></div></div><div class="threat-track"><i id="threat-bar"></i></div></section>
+          <button id="next-wave" class="primary-button"><span id="next-text">НАЧАТЬ ВОЛНУ 01</span><span>↗</span></button>
+          <p id="wave-help" class="wave-help">Постройте башни перед наступлением</p>
+        </aside>
+      </div>
+      <section class="operation-timeline"><div class="timeline-label"><span class="eyebrow">ХОД ОПЕРАЦИИ</span><strong>10 волн до рассвета</strong></div><div id="wave-timeline" class="wave-timeline"></div><div class="timeline-end"><span>◈</span> УДЕРЖАТЬ<br>РУБЕЖ</div></section>
+      <footer class="page-footer"><span><i></i> ВСЕ СИСТЕМЫ ГОТОВЫ</span><span><kbd>1–6</kbd> башни <kbd>ESC</kbd> отмена <kbd>ПРОБЕЛ</kbd> пауза <kbd>U</kbd> улучшить <kbd>X</kbd> продать</span><span>PROCEDURAL DEFENSE / V.1.0</span></footer>
+    </main>
+  </div>
+  <div id="modal" class="modal" hidden><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div id="modal-content"></div></section></div>
+  <script src="js/engine.js"></script><script src="js/game.js"></script>
+</body>
+</html>

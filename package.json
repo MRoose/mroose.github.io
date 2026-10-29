@@ -1,0 +1,7 @@
+{
+  "name": "last-line-procedural-defense",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dependency-free procedural browser tower defense",
+  "scripts": { "start": "node scripts/server.cjs", "test": "node --test tests/engine.test.cjs", "test:playthrough": "node tests/playthrough.cjs" }
+}

@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-29T22:00:07.350Z",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+  "viewport": [
+    1280,
+    720
+  ],
+  "checks": [
+    {
+      "name": "Initial HUD / 700 credits / 30 lives / 6 modules / 10 waves",
+      "passed": true
+    },
+    {
+      "name": "Procedural Web Audio starts after a user gesture",
+      "passed": true
+    },
+    {
+      "name": "Mute",
+      "passed": true
+    },
+    {
+      "name": "Unmute",
+      "passed": true
+    },
+    {
+      "name": "Road cannot be built on",
+      "passed": true
+    },
+    {
+      "name": "Map placement deducts credits",
+      "passed": true
+    },
+    {
+      "name": "Selecting a placed tower opens its controls",
+      "passed": true
+    },
+    {
+      "name": "Three upgrades reach level IV",
+      "passed": true
+    },
+    {
+      "name": "Sale refunds 70% of all investment",
+      "passed": true
+    },
+    {
+      "name": "Cannot build without enough credits",
+      "passed": true
+    },
+    {
+      "name": "Escape cancels construction",
+      "passed": true
+    },
+    {
+      "name": "Keyboard tower selection",
+      "passed": true
+    },
+    {
+      "name": "Starting a wave and disabling duplicate start",
+      "passed": true
+    },
+    {
+      "name": "Space pauses simulation",
+      "passed": true
+    },
+    {
+      "name": "Space resumes simulation",
+      "passed": true
+    },
+    {
+      "name": "Speed ×1",
+      "passed": true
+    },
+    {
+      "name": "Speed ×2",
+      "passed": true
+    },
+    {
+      "name": "Speed ×4",
+      "passed": true
+    },
+    {
+      "name": "Help pauses and opens a dialog",
+      "passed": true
+    },
+    {
+      "name": "Closing help resumes previous state",
+      "passed": true
+    },
+    {
+      "name": "Cancel restart preserves game",
+      "passed": true
+    },
+    {
+      "name": "Confirmed restart resets game",
+      "passed": true
+    },
+    {
+      "name": "Stress ×4 has 3600 active enemies and 96 towers",
+      "passed": true
+    },
+    {
+      "name": "Stress 3600 / 96 / ×4 minimum one-second FPS ≥ 30",
+      "passed": true
+    },
+    {
+      "name": "Stress 3600 / 96 / ×4 actual projectiles and status effects",
+      "passed": true
+    },
+    {
+      "name": "Defeat screen is rendered",
+      "passed": true
+    },
+    {
+      "name": "Restart from defeat",
+      "passed": true
+    },
+    {
+      "name": "Boss HUD rendered",
+      "passed": true
+    },
+    {
+      "name": "Victory screen is rendered only after final boss dies",
+      "passed": true
+    },
+    {
+      "name": "Restart from victory",
+      "passed": true
+    },
+    {
+      "name": "No JavaScript errors or unhandled rejections",
+      "passed": true
+    }
+  ],
+  "benchmarks": [
+    {
+      "speed": 4,
+      "enemies": 3600,
+      "towers": 96,
+      "samples": 975,
+      "seconds": 8,
+      "averageFPS": 121.9,
+      "minimumOneSecondFPS": 118,
+      "p95FrameMs": 13.9,
+      "p99FrameMs": 14,
+      "averageDrawMs": 4.4
+    }
+  ],
+  "errors": [],
+  "passed": true
+}
